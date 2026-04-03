@@ -352,16 +352,28 @@ Extensive experiments across multiple benchmarks demonstrate the effectiveness o
         <div class="content">
           <h2 class="title is-3">Results</h2>
          <p>
-              <img src="static/images/results.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/results_1.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
             </p>
             <p>
-                  The performance of 4D occupancy forecasting. ``Avg.'' represents the average performance across 1s, 2s, and 3s timeframes. The best results are highlighted in bold.
+                  Semantic occupancy prediction results on nuScenes-Occupancy validation set. The C,D,L,M denotes camera, depth, LiDAR and multi-modal.
             </p>
          <p>
-              <img src="static/images/vis.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              <img src="static/images/results_2.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
             </p>
             <p>
-                  Visualizations of forecasting and planning results from 0 to 12 seconds for groundtruth, OccWorld, and our OccTrans. The regions highlighted by red circles show clear differences between OccWorld and OccTrans, which are more apparent when zoomed in.
+                  Semantic Scene Completion results on SemanticKITTI validation set.
+            </p>
+            <p>
+              <img src="static/images/vis_1.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+            </p>
+            <p>
+                  Qualitative results of the 3D semantic occupancy predictions on nuScenes-Occupancy. The leftmost column shows the input surrounding images, the following three columns visualize the 3D semantic occupancy results from the ground truth, CONet, and our method. The regions highlighted by red circles indicate that these areas have obvious differences (better viewed when zoomed in).
+            </p>
+            <p>
+              <img src="static/images/vis_2.png" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+            </p>
+            <p>
+                  (a) Progressively Refinement. Predicted occupancy results on different time steps. (b) Uncertainty awareness. The ``Uncertainty 1-2'' and ``Uncertainty 2-3'' represent the high estimated uncertainty voxels from step one to step two and from step two to step three, respectively. The regions highlighted by red circles indicate that these areas have obvious differences in different inference steps (better viewed when zoomed in).
             </p>
         </div>
       </div>
